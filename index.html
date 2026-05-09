@@ -1,783 +1,788 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="de">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2299.6">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Psychologische Befunderhebung in Berlin Prenzlauer Berg | ADHS & Autismus Abklärung</title>
+    <meta name="description" content="Psychologische Befunderhebung bei ADHS und Autismus für Erwachsene in Berlin Prenzlauer Berg. Schnelle Termine, ausführliche Testung, keine Wartezeit. Selbstzahler.">
+    <meta name="keywords" content="ADHS Abklärung Berlin, Autismus Test Erwachsene Berlin, Psychologische Befunderhebung, ADHS Screening Berlin, Autismus Abklärung Prenzlauer Berg, ADHS Selbstzahler Berlin, Neurodivergenz Berlin">
+    <meta name="author" content="Psychologische Befunderhebung Berlin">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Psychologische Befunderhebung in Berlin Prenzlauer Berg">
+    <meta property="og:description" content="ADHS und Autismus Abklärung für Erwachsene. Schnelle Termine, ausführliche Testung.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="de_DE">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧠</text></svg>">
+    
+    <style>
+        /* Reset & Base */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        :root {
+            --primary: #1e3a5f;
+            --primary-light: #2d4a6f;
+            --accent: #4a9b9b;
+            --accent-light: #5fb3b3;
+            --bg: #f8f9fa;
+            --bg-alt: #e9ecef;
+            --text: #2d3436;
+            --text-light: #636e72;
+            --white: #ffffff;
+            --shadow: 0 2px 10px rgba(0,0,0,0.08);
+            --shadow-lg: 0 4px 20px rgba(0,0,0,0.12);
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            font-size: 17px;
+            line-height: 1.7;
+            color: var(--text);
+            background: var(--bg);
+        }
+        
+        /* Typography */
+        h1, h2, h3 {
+            color: var(--primary);
+            line-height: 1.3;
+            font-weight: 600;
+        }
+        
+        h1 { font-size: 2.2rem; }
+        h2 { font-size: 1.75rem; margin-bottom: 1.5rem; }
+        h3 { font-size: 1.25rem; margin-bottom: 0.75rem; }
+        
+        p { margin-bottom: 1rem; }
+        
+        a {
+            color: var(--accent);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        
+        a:hover { color: var(--primary); }
+        
+        ul {
+            margin-left: 1.2rem;
+            margin-top: 0.5rem;
+        }
+
+        li {
+            margin-bottom: 0.4rem;
+        }
+        
+        /* Layout */
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+        
+        section {
+            padding: 5rem 0;
+        }
+        
+        /* Header */
+        header {
+            background: var(--white);
+            box-shadow: var(--shadow);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 1.5rem;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        
+        .logo {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--primary);
+        }
+        
+        nav a {
+            color: var(--text);
+            margin-left: 2rem;
+            font-size: 0.95rem;
+            font-weight: 500;
+        }
+        
+        nav a:hover { color: var(--accent); }
+        
+        /* Mobile Nav */
+        .nav-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--primary);
+        }
+        
+        /* Hero */
+        .hero {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+            color: var(--white);
+            padding: 10rem 0 6rem;
+            margin-top: 60px;
+        }
+        
+        .hero h1 {
+            color: var(--white);
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            max-width: 700px;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            opacity: 0.95;
+            max-width: 600px;
+            margin-bottom: 2rem;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: var(--accent);
+            color: var(--white);
+            padding: 1rem 2rem;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: background 0.2s, transform 0.2s;
+        }
+        
+        .btn:hover {
+            background: var(--accent-light);
+            color: var(--white);
+            transform: translateY(-2px);
+        }
+        
+        .btn-outline {
+            background: transparent;
+            border: 2px solid var(--white);
+            margin-left: 1rem;
+        }
+        
+        .btn-outline:hover {
+            background: var(--white);
+            color: var(--primary);
+        }
+        
+        /* Hinweis-Banner */
+        .hinweis {
+            background: var(--bg-alt);
+            border-left: 4px solid var(--accent);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            font-size: 0.95rem;
+            color: var(--text-light);
+        }
+        
+        /* Cards */
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .card {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+            transition: box-shadow 0.2s, transform 0.2s;
+        }
+        
+        .card:hover {
+            box-shadow: var(--shadow-lg);
+            transform: translateY(-3px);
+        }
+        
+        .card h3 {
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .card-icon {
+            font-size: 1.5rem;
+        }
+        
+        .price {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--accent);
+            margin: 1rem 0;
+        }
+        
+        .price span {
+            font-size: 0.9rem;
+            font-weight: 400;
+            color: var(--text-light);
+        }
+        
+        /* Ablauf */
+        .ablauf-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .ablauf-step {
+            text-align: center;
+            padding: 2rem 1rem;
+        }
+        
+        .step-number {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            background: var(--primary);
+            color: var(--white);
+            border-radius: 50%;
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+        
+        /* Über */
+        .ueber-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+        
+        .qualifikationen {
+            list-style: none;
+        }
+        
+        .qualifikationen li {
+            padding: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+        
+        .qualifikationen li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+            font-weight: bold;
+        }
+        
+        /* Praxis-Foto Placeholder */
+        .praxis-foto {
+            background: var(--bg-alt);
+            border-radius: 10px;
+            height: 350px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-light);
+            font-size: 1rem;
+        }
+        
+        /* Kontakt */
+        .kontakt-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+        }
+        
+        .kontakt-info p {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-bottom: 1.25rem;
+        }
+        
+        .calendly-placeholder {
+            background: var(--white);
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+            padding: 2rem;
+            text-align: center;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--primary);
+            color: var(--white);
+            padding: 3rem 0;
+        }
+        
+        .footer-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        
+        footer a {
+            color: var(--white);
+            opacity: 0.85;
+            margin-left: 1.5rem;
+        }
+        
+        footer a:hover { opacity: 1; }
+        
+        /* Legal Pages */
+        .legal {
+            padding-top: 120px;
+            min-height: 100vh;
+        }
+        
+        .legal h1 {
+            margin-bottom: 2rem;
+        }
+        
+        .legal h2 {
+            font-size: 1.3rem;
+            margin-top: 2rem;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero { padding: 8rem 0 4rem; }
+            .hero h1 { font-size: 1.9rem; }
+            h2 { font-size: 1.5rem; }
+            
+            .btn-outline { margin-left: 0; margin-top: 1rem; display: block; text-align: center; }
+            
+            nav { 
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: var(--white);
+                padding: 1rem;
+                box-shadow: var(--shadow);
+            }
+            
+            nav.active { display: block; }
+            
+            nav a { 
+                display: block; 
+                margin: 0;
+                padding: 0.75rem 0;
+                border-bottom: 1px solid var(--bg-alt);
+            }
+            
+            .nav-toggle { display: block; }
+            
+            .ueber-content,
+            .kontakt-grid { 
+                grid-template-columns: 1fr; 
+            }
+            
+            .praxis-foto { height: 250px; }
+            
+            .footer-inner {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            footer a { margin: 0.5rem; }
+        }
+    </style>
 </head>
+
 <body>
-<p class="p1">&lt;!DOCTYPE html&gt;</p>
-<p class="p1">&lt;html lang="de"&gt;</p>
-<p class="p1">&lt;head&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
-<p class="p2"><span class="Apple-converted-space">    </span></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- SEO Meta Tags --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;Psychologische Befunderhebung in Berlin Prenzlauer Berg | ADHS &amp; Autismus Abklärung&lt;/title&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="description" content="Psychologische Befunderhebung bei ADHS und Autismus für Erwachsene in Berlin Prenzlauer Berg. Schnelle Termine, ausführliche Testung, keine Wartezeit. Selbstzahler."&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="keywords" content="ADHS Abklärung Berlin, Autismus Test Erwachsene Berlin, Psychologische Befunderhebung, ADHS Screening Berlin, Autismus Abklärung Prenzlauer Berg, ADHS Selbstzahler Berlin, Neurodivergenz Berlin"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="author" content="Psychologische Befunderhebung Berlin"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="robots" content="index, follow"&gt;</p>
-<p class="p2"><span class="Apple-converted-space">    </span></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Open Graph --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta property="og:title" content="Psychologische Befunderhebung in Berlin Prenzlauer Berg"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta property="og:description" content="ADHS und Autismus Abklärung für Erwachsene. Schnelle Termine, ausführliche Testung."&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta property="og:type" content="website"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta property="og:locale" content="de_DE"&gt;</p>
-<p class="p2"><span class="Apple-converted-space">    </span></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Favicon Placeholder --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;link rel="icon" href="data:image/svg+xml,&lt;svg xmlns='[w3.org](http://www.w3.org/2000/svg)' viewBox='0 0 100 100'&gt;&lt;text y='.9em' font-size='90'&gt;🧠&lt;/text&gt;&lt;/svg&gt;"&gt;</p>
-<p class="p2"><span class="Apple-converted-space">    </span></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;style&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>/* Reset &amp; Base */</p>
-<p class="p1"><span class="Apple-converted-space">        </span>*, *::before, *::after {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>box-sizing: border-box;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin: 0;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 0;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>:root {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>--primary: #1e3a5f;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>--primary-light: #2d4a6f;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>--accent: #4a9b9b;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>--accent-light: #5fb3b3;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>--bg: #f8f9fa;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>--bg-alt: #e9ecef;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>--text: #2d3436;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>--text-light: #636e72;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>--white: #ffffff;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>--shadow: 0 2px 10px rgba(0,0,0,0.08);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>--shadow-lg: 0 4px 20px rgba(0,0,0,0.12);</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>html {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>scroll-behavior: smooth;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>body {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-size: 17px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>line-height: 1.7;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: var(--text);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background: var(--bg);</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>/* Typography */</p>
-<p class="p1"><span class="Apple-converted-space">        </span>h1, h2, h3 {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: var(--primary);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>line-height: 1.3;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-weight: 600;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>h1 { font-size: 2.2rem; }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>h2 { font-size: 1.75rem; margin-bottom: 1.5rem; }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>h3 { font-size: 1.25rem; margin-bottom: 0.75rem; }</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>p { margin-bottom: 1rem; }</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>a {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: var(--accent);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>text-decoration: none;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>transition: color 0.2s;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>a:hover { color: var(--primary); }</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>/* Layout */</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.container {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>max-width: 1100px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin: 0 auto;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 0 1.5rem;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>section {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 5rem 0;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>/* Header */</p>
-<p class="p1"><span class="Apple-converted-space">        </span>header {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background: var(--white);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: var(--shadow);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>position: fixed;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>width: 100%;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>top: 0;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>z-index: 1000;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.header-inner {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>display: flex;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>justify-content: space-between;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>align-items: center;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 1rem 1.5rem;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>max-width: 1100px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin: 0 auto;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.logo {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-size: 1.1rem;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-weight: 600;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: var(--primary);</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>nav a {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: var(--text);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-left: 2rem;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-size: 0.95rem;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-weight: 500;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>nav a:hover { color: var(--accent); }</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>/* Mobile Nav */</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.nav-toggle {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>display: none;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background: none;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border: none;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-size: 1.5rem;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>cursor: pointer;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: var(--primary);</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>/* Hero */</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.hero {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: var(--white);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 10rem 0 6rem;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-top: 60px;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.hero h1 {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: var(--white);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-size: 2.5rem;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 1.5rem;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>max-width: 700px;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.hero p {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-size: 1.2rem;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>opacity: 0.95;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>max-width: 600px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 2rem;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.btn {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>display: inline-block;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background: var(--accent);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: var(--white);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 1rem 2rem;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 6px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-weight: 600;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-size: 1rem;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>transition: background 0.2s, transform 0.2s;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.btn:hover {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background: var(--accent-light);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: var(--white);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>transform: translateY(-2px);</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.btn-outline {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background: transparent;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border: 2px solid var(--white);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-left: 1rem;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.btn-outline:hover {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background: var(--white);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: var(--primary);</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>/* Hinweis-Banner */</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.hinweis {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background: var(--bg-alt);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border-left: 4px solid var(--accent);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 1.5rem;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin: 2rem 0;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-size: 0.95rem;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: var(--text-light);</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>/* Cards */</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.cards {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>display: grid;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));</p>
-<p class="p1"><span class="Apple-converted-space">            </span>gap: 2rem;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-top: 2rem;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.card {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background: var(--white);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 2rem;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 10px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: var(--shadow);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>transition: box-shadow 0.2s, transform 0.2s;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.card:hover {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: var(--shadow-lg);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>transform: translateY(-3px);</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.card h3 {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: var(--primary);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>display: flex;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>align-items: center;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>gap: 0.5rem;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.card-icon {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-size: 1.5rem;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.price {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-size: 1.5rem;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-weight: 700;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: var(--accent);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin: 1rem 0;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.price span {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-size: 0.9rem;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-weight: 400;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: var(--text-light);</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>/* Ablauf */</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.ablauf-grid {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>display: grid;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));</p>
-<p class="p1"><span class="Apple-converted-space">            </span>gap: 2rem;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-top: 2rem;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.ablauf-step {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 2rem 1rem;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.step-number {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>display: inline-flex;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>align-items: center;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>justify-content: center;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>width: 50px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>height: 50px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background: var(--primary);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: var(--white);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 50%;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-size: 1.25rem;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-weight: 700;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 1rem;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>/* Über */</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.ueber-content {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>display: grid;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>grid-template-columns: 1fr 1fr;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>gap: 3rem;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>align-items: center;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.qualifikationen {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>list-style: none;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.qualifikationen li {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 0.5rem 0;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding-left: 1.5rem;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>position: relative;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.qualifikationen li::before {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>content: "✓";</p>
-<p class="p1"><span class="Apple-converted-space">            </span>position: absolute;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>left: 0;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: var(--accent);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-weight: bold;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>/* Praxis-Foto Placeholder */</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.praxis-foto {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background: var(--bg-alt);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 10px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>height: 350px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>display: flex;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>align-items: center;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>justify-content: center;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: var(--text-light);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-size: 1rem;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>/* Kontakt */</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.kontakt-grid {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>display: grid;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>grid-template-columns: 1fr 1fr;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>gap: 3rem;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.kontakt-info p {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>display: flex;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>align-items: center;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>gap: 0.75rem;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 1.25rem;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.calendly-placeholder {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background: var(--white);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 10px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: var(--shadow);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 2rem;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>min-height: 400px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>display: flex;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>flex-direction: column;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>align-items: center;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>justify-content: center;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>/* Footer */</p>
-<p class="p1"><span class="Apple-converted-space">        </span>footer {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background: var(--primary);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: var(--white);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 3rem 0;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.footer-inner {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>display: flex;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>justify-content: space-between;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>align-items: center;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>flex-wrap: wrap;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>gap: 1rem;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>footer a {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: var(--white);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>opacity: 0.85;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-left: 1.5rem;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>footer a:hover { opacity: 1; }</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>/* Legal Pages */</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.legal {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding-top: 120px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>min-height: 100vh;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.legal h1 {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 2rem;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.legal h2 {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-size: 1.3rem;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-top: 2rem;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>/* Responsive */</p>
-<p class="p1"><span class="Apple-converted-space">        </span>@media (max-width: 768px) {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>.hero { padding: 8rem 0 4rem; }</p>
-<p class="p1"><span class="Apple-converted-space">            </span>.hero h1 { font-size: 1.9rem; }</p>
-<p class="p1"><span class="Apple-converted-space">            </span>h2 { font-size: 1.5rem; }</p>
-<p class="p2"><span class="Apple-converted-space">            </span></p>
-<p class="p1"><span class="Apple-converted-space">            </span>.btn-outline { margin-left: 0; margin-top: 1rem; display: block; text-align: center; }</p>
-<p class="p2"><span class="Apple-converted-space">            </span></p>
-<p class="p1"><span class="Apple-converted-space">            </span>nav {<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">                </span>display: none;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>position: absolute;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>top: 100%;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>left: 0;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>right: 0;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>background: var(--white);</p>
-<p class="p1"><span class="Apple-converted-space">                </span>padding: 1rem;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>box-shadow: var(--shadow);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>}</p>
-<p class="p2"><span class="Apple-converted-space">            </span></p>
-<p class="p1"><span class="Apple-converted-space">            </span>nav.active { display: block; }</p>
-<p class="p2"><span class="Apple-converted-space">            </span></p>
-<p class="p1"><span class="Apple-converted-space">            </span>nav a {<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">                </span>display: block;<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">                </span>margin: 0;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>padding: 0.75rem 0;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>border-bottom: 1px solid var(--bg-alt);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>}</p>
-<p class="p2"><span class="Apple-converted-space">            </span></p>
-<p class="p1"><span class="Apple-converted-space">            </span>.nav-toggle { display: block; }</p>
-<p class="p2"><span class="Apple-converted-space">            </span></p>
-<p class="p1"><span class="Apple-converted-space">            </span>.ueber-content,</p>
-<p class="p1"><span class="Apple-converted-space">            </span>.kontakt-grid {<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">                </span>grid-template-columns: 1fr;<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">            </span>}</p>
-<p class="p2"><span class="Apple-converted-space">            </span></p>
-<p class="p1"><span class="Apple-converted-space">            </span>.praxis-foto { height: 250px; }</p>
-<p class="p2"><span class="Apple-converted-space">            </span></p>
-<p class="p1"><span class="Apple-converted-space">            </span>.footer-inner {</p>
-<p class="p1"><span class="Apple-converted-space">                </span>flex-direction: column;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>text-align: center;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>}</p>
-<p class="p2"><span class="Apple-converted-space">            </span></p>
-<p class="p1"><span class="Apple-converted-space">            </span>footer a { margin: 0.5rem; }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</p>
-<p class="p1">&lt;/head&gt;</p>
-<p class="p1">&lt;body&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Header --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;header&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="header-inner"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="logo"&gt;Psychologische Befunderhebung Berlin&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;button class="nav-toggle" aria-label="Navigation öffnen"&gt;☰&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;nav&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;a href="#angebot"&gt;Angebot&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;a href="#ablauf"&gt;Ablauf&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;a href="#ueber"&gt;Über&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;a href="#preise"&gt;Preise&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;a href="#kontakt"&gt;Kontakt&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/nav&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/header&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Hero --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;section class="hero"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="container"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h1&gt;Psychologische Befunderhebung bei ADHS und Autismus in Berlin&lt;/h1&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;Ausführliche testpsychologische Untersuchung für Erwachsene. Zeitnahe Termine, strukturierte Abklärung, ausführlicher Befundbericht – als Grundlage für die fachärztliche Diagnose.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;a href="#kontakt" class="btn"&gt;Termin vereinbaren&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;a href="#angebot" class="btn btn-outline"&gt;Mehr erfahren&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Hinweis zur Transparenz --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;section style="padding: 2rem 0 0;"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="container"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="hinweis"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;strong&gt;Wichtiger Hinweis:&lt;/strong&gt; Ich bin Psychologin (M.Sc.) in Ausbildung zur Psychologischen Psychotherapeutin. Ich erstelle ausführliche psychologische Befundberichte als Grundlage für die fachärztliche Beurteilung. Die formale Diagnosestellung erfolgt durch einen kooperierenden Facharzt für Psychiatrie.</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Angebot --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;section id="angebot"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="container"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h2&gt;Mein Angebot&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;Ich biete strukturierte psychologische Befunderhebung für Erwachsene an, die Klarheit über eine mögliche ADHS oder Autismus-Spektrum-Konstellation suchen.&lt;/p&gt;</p>
-<p class="p2"><span class="Apple-converted-space">            </span></p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="cards"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="card"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3&gt;&lt;span class="card-icon"&gt;📋&lt;/span&gt; Screening&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p&gt;Erste Einschätzung mittels standardisierter Fragebögen und kurzem Gespräch. Ideal als Einstieg, um zu klären, ob eine ausführliche Befunderhebung sinnvoll ist.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;ul&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;li&gt;Online-Fragebögen vorab&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;li&gt;45-minütiges Gespräch (online oder vor Ort)&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;li&gt;Schriftliche Einschätzung&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/ul&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                </span></p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="card"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3&gt;&lt;span class="card-icon"&gt;🔍&lt;/span&gt; Befunderhebung ADHS&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p&gt;Umfassende testpsychologische Untersuchung bei Verdacht auf ADHS im Erwachsenenalter.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;ul&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;li&gt;Ausführliche biographische Anamnese&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;li&gt;Standardisierte Testverfahren&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;li&gt;Differenzialdiagnostische Abklärung&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;li&gt;Ausführlicher Befundbericht&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/ul&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                </span></p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="card"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3&gt;&lt;span class="card-icon"&gt;🧩&lt;/span&gt; Befunderhebung Autismus&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p&gt;Strukturierte Abklärung einer möglichen Autismus-Spektrum-Konstellation bei Erwachsenen.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;ul&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;li&gt;Ausführliche Anamnese&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;li&gt;Standardisierte Verfahren (u.a. ADOS-2)&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;li&gt;Selbst- und Fremdbeurteilung&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;li&gt;Ausführlicher Befundbericht&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/ul&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Ablauf --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;section id="ablauf" style="background: var(--bg-alt);"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="container"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h2&gt;So läuft die Befunderhebung ab&lt;/h2&gt;</p>
-<p class="p2"><span class="Apple-converted-space">            </span></p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="ablauf-grid"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="ablauf-step"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="step-number"&gt;1&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3&gt;Erstgespräch&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p&gt;Kurzes Kennenlernen (online oder telefonisch), Klärung Ihrer Anliegen und Fragen, Terminvereinbarung.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                </span></p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="ablauf-step"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="step-number"&gt;2&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3&gt;Fragebögen&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p&gt;Sie erhalten standardisierte Fragebögen, die Sie vorab in Ruhe zu Hause ausfüllen.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                </span></p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="ablauf-step"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="step-number"&gt;3&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3&gt;Untersuchung&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p&gt;Ausführliche Termine vor Ort mit Anamnese, Interview und testpsychologischen Verfahren.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                </span></p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="ablauf-step"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="step-number"&gt;4&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3&gt;Befundbericht&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p&gt;Sie erhalten einen ausführlichen schriftlichen Befundbericht mit allen Ergebnissen.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                </span></p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="ablauf-step"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="step-number"&gt;5&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3&gt;Fachärztliche Diagnose&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p&gt;Mit dem Befundbericht erfolgt die formale Diagnosestellung und ggf. Medikation durch einen kooperierenden Psychiater.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Über --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;section id="ueber"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="container"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h2&gt;Über mich&lt;/h2&gt;</p>
-<p class="p2"><span class="Apple-converted-space">            </span></p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="ueber-content"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p&gt;Ich bin Psychologin (M.Sc.) in Ausbildung zur Psychologischen Psychotherapeutin mit umfangreicher Erfahrung in der psychologischen Testdiagnostik.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p&gt;Mein Fokus liegt auf der sorgfältigen Abklärung von ADHS und Autismus bei Erwachsenen – zwei Bereiche, in denen die Wartezeiten im kassenärztlichen System oft unzumutbar lang sind.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p&gt;Ich arbeite evidenzbasiert, transparent und auf Augenhöhe. Mein Ziel ist es, Ihnen Klarheit zu geben – unabhängig vom Ergebnis.&lt;/p&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                    </span></p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3 style="margin-top: 2rem;"&gt;Qualifikation&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;ul class="qualifikationen"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;li&gt;M.Sc. Psychologie&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;li&gt;Ausbildung zur Psychologischen Psychotherapeutin&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;li&gt;Erfahrung in der Durchführung standardisierter Testverfahren (ADOS-2, HASE, u.a.)&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;li&gt;Berufshaftpflichtversicherung&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/ul&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                </span></p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="praxis-foto"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>[Foto der Praxisräume]</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Preise --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;section id="preise" style="background: var(--bg-alt);"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="container"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h2&gt;Preise&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;Meine Leistungen werden als Selbstzahler-Angebot erbracht. Eine Erstattung durch private Krankenversicherungen ist je nach Tarif teilweise möglich – bitte klären Sie dies vorab mit Ihrer Versicherung.&lt;/p&gt;</p>
-<p class="p2"><span class="Apple-converted-space">            </span></p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="cards"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="card"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3&gt;Screening&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p&gt;Erste Einschätzung mit Fragebögen und kurzem Gespräch&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="price"&gt;[Preis] € &lt;span&gt;inkl. MwSt.&lt;/span&gt;&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;a href="#kontakt" class="btn" style="width: 100%; text-align: center;"&gt;Anfragen&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                </span></p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="card"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3&gt;Befunderhebung ADHS&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p&gt;Vollständige testpsychologische Untersuchung&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="price"&gt;[Preis] € &lt;span&gt;inkl. MwSt.&lt;/span&gt;&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;a href="#kontakt" class="btn" style="width: 100%; text-align: center;"&gt;Anfragen&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                </span></p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="card"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3&gt;Befunderhebung Autismus&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p&gt;Vollständige testpsychologische Untersuchung&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="price"&gt;[Preis] € &lt;span&gt;inkl. MwSt.&lt;/span&gt;&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;a href="#kontakt" class="btn" style="width: 100%; text-align: center;"&gt;Anfragen&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                </span></p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="card"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3&gt;Kombination ADHS + Autismus&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p&gt;Umfassende Abklärung beider Bereiche&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="price"&gt;[Preis] € &lt;span&gt;inkl. MwSt.&lt;/span&gt;&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;a href="#kontakt" class="btn" style="width: 100%; text-align: center;"&gt;Anfragen&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Kontakt --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;section id="kontakt"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="container"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h2&gt;Kontakt &amp; Terminbuchung&lt;/h2&gt;</p>
-<p class="p2"><span class="Apple-converted-space">            </span></p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="kontakt-grid"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="kontakt-info"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p&gt;Buchen Sie direkt einen Termin für ein kurzes Erstgespräch – kostenlos und unverbindlich.&lt;/p&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                    </span></p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3 style="margin-top: 2rem;"&gt;Kontaktdaten&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p&gt;📍 [Adresse Prenzlauer Berg – Platzhalter]&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p&gt;📧 &lt;a href="mailto:kontakt@pb-berlin.de"&gt;kontakt@pb-berlin.de&lt;/a&gt;&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p&gt;📞 [Telefonnummer – Platzhalter]&lt;/p&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                    </span></p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3 style="margin-top: 2rem;"&gt;Anfahrt&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p&gt;Die Praxis befindet sich in Berlin Prenzlauer Berg und ist gut mit öffentlichen Verkehrsmitteln erreichbar.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                </span></p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="calendly-placeholder"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p style="margin-bottom: 1rem;"&gt;Terminbuchung&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p style="color: var(--text-light); font-size: 0.9rem;"&gt;Hier wird der Calendly-Kalender eingebettet&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p style="margin-top: 1.5rem; font-size: 0.85rem; color: var(--text-light);"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;!-- Ersetze diesen Bereich durch: --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;!-- &lt;div class="calendly-inline-widget" data-url="[calendly.com](https://calendly.com/DEIN-LINK)" style="min-width:320px;height:630px;"&gt;&lt;/div&gt; --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;!-- &lt;script type="text/javascript" src="[assets.calendly.com](https://assets.calendly.com/assets/external/widget.js)" async&gt;&lt;/script&gt; --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;a href="[calendly.com](https://calendly.com/PLATZHALTER)" class="btn" style="margin-top: 1rem;"&gt;Termin buchen&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Footer --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;footer&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="container"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="footer-inner"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div&gt;© 2025 Psychologische Befunderhebung Berlin&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;a href="#impressum" onclick="showLegal('impressum')"&gt;Impressum&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;a href="#datenschutz" onclick="showLegal('datenschutz')"&gt;Datenschutz&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/footer&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Impressum Modal/Section --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div id="impressum-modal" style="display:none; position:fixed; top:0; left:0; right:0; bottom:0; background:var(--bg); z-index:2000; overflow-y:auto; padding:2rem;"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="container" style="max-width:800px; background:var(--white); padding:3rem; border-radius:10px; margin-top:2rem;"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;button onclick="closeLegal()" style="float:right; background:none; border:none; font-size:1.5rem; cursor:pointer;"&gt;✕&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h1&gt;Impressum&lt;/h1&gt;</p>
-<p class="p2"><span class="Apple-converted-space">            </span></p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h2&gt;Angaben gemäß § 5 TMG&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>Anastasia Kourti, M.Sc. Psychologie&lt;br&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>[Straße und Hausnummer – Platzhalter]&lt;br&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>[PLZ] Berlin Prenzlauer Berg</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/p&gt;</p>
-<p class="p2"><span class="Apple-converted-space">            </span></p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h2&gt;Kontakt&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>Telefon: [Platzhalter]&lt;br&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>E-Mail: kontakt@pb-berlin.de</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/p&gt;</p>
-<p class="p2"><span class="Apple-converted-space">            </span></p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h2&gt;Berufsbezeichnung&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>Psychologin (M.Sc.)&lt;br&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>Verliehen in: Deutschland</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>Psychologin in Ausbildung zur Psychologischen Psychotherapeutin</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/p&gt;</p>
-<p class="p2"><span class="Apple-converted-space">            </span></p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h2&gt;Hinweis zur Tätigkeit&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>Die angebotenen Leistungen umfassen psychologische Befunderhebung und testpsychologische Untersuchungen. Es handelt sich nicht um Heilbehandlung im Sinne des Psychotherapeutengesetzes. Die formale Diagnosestellung erfolgt durch einen kooperierenden Facharzt für Psychiatrie.</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/p&gt;</p>
-<p class="p2"><span class="Apple-converted-space">            </span></p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h2&gt;Berufshaftpflichtversicherung&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>[Name und Anschrift der Versicherung – Platzhalter]&lt;br&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>Geltungsraum: Deutschland</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/p&gt;</p>
-<p class="p2"><span class="Apple-converted-space">            </span></p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h2&gt;Streitschlichtung&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: &lt;a href="[ec.europa.eu](https://ec.europa.eu/consumers/odr/)" target="_blank"&gt;[ec.europa.eu](https://ec.europa.eu/consumers/odr/)&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>Ich bin nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Datenschutz Modal/Section --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div id="datenschutz-modal" style="display:none; position:fixed; top:0; left:0; right:0; bottom:0; background:var(--bg); z-index:2000; overflow-y:auto; padding:2rem;"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="container" style="max-width:800px; background:var(--white); padding:3rem; border-radius:10px; margin-top:2rem;"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;button onclick="closeLegal()" style="float:right; background:none; border:none; font-size:1.5rem; cursor:pointer;"&gt;✕&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h1&gt;Datenschutzerklärung&lt;/h1&gt;</p>
-<p class="p2"><span class="Apple-converted-space">            </span></p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h2&gt;1. Verantwortliche Stelle&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>Anastasia Kourti&lt;br&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>[Adresse – Platzhalter]&lt;br&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>E-Mail: kontakt@pb-berlin.de</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/p&gt;</p>
-<p class="p2"><span class="Apple-converted-space">            </span></p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h2&gt;2. Erhebung und Speicherung personenbezogener Daten&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>Beim Besuch dieser Website werden automatisch Informationen erfasst, die Ihr Browser an den Server übermittelt (Server-Logfiles). Diese Daten sind nicht bestimmten Personen zuordenbar und werden nicht mit anderen Datenquellen zusammengeführt.</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/p&gt;</p>
-<p class="p2"><span class="Apple-converted-space">            </span></p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h2&gt;3. Kontaktaufnahme&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>Wenn Sie per E-Mail Kontakt aufnehmen, werden Ihre Angaben zur Bearbeitung der Anfrage und für den Fall von Anschlussfragen gespeichert. Diese Daten werden ohne Ihre ausdrückliche Einwilligung nicht weitergegeben.</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/p&gt;</p>
-<p class="p2"><span class="Apple-converted-space">            </span></p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h2&gt;4. Terminbuchung (Calendly)&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>Für die Terminbuchung wird der Dienst Calendly (Calendly LLC, USA) verwendet. Bei der Buchung werden Ihre eingegebenen Daten (Name, E-Mail, ggf. weitere Angaben) an Calendly übermittelt. Bitte beachten Sie die Datenschutzerklärung von Calendly: &lt;a href="[calendly.com](https://calendly.com/privacy)" target="_blank"&gt;[calendly.com](https://calendly.com/privacy)&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/p&gt;</p>
-<p class="p2"><span class="Apple-converted-space">            </span></p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h2&gt;5. Ihre Rechte&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>Sie haben das Recht auf Auskunft, Berichtigung, Löschung und Einschränkung der Verarbeitung Ihrer personenbezogenen Daten. Wenden Sie sich hierzu an die oben genannte Kontaktadresse.</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/p&gt;</p>
-<p class="p2"><span class="Apple-converted-space">            </span></p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h2&gt;6. Hosting&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>Diese Website wird bei GitHub Pages (GitHub Inc., USA) gehostet. GitHub kann beim Aufruf der Website Server-Logfiles speichern. Weitere Informationen: &lt;a href="[docs.github.com](https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement)" target="_blank"&gt;GitHub Privacy Statement&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/p&gt;</p>
-<p class="p2"><span class="Apple-converted-space">            </span></p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;p style="margin-top: 2rem; color: var(--text-light); font-size: 0.9rem;"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;strong&gt;Hinweis:&lt;/strong&gt; Diese Datenschutzerklärung ist ein Grundgerüst. Bitte lassen Sie diese von einem Rechtsanwalt prüfen und an Ihre konkrete Situation anpassen, insbesondere wenn Sie weitere Tools oder Tracking einsetzen.</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;script&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>// Mobile Navigation Toggle</p>
-<p class="p1"><span class="Apple-converted-space">        </span>document.querySelector('.nav-toggle').addEventListener('click', function() {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>document.querySelector('nav').classList.toggle('active');</p>
-<p class="p1"><span class="Apple-converted-space">        </span>});</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>// Close mobile nav on link click</p>
-<p class="p1"><span class="Apple-converted-space">        </span>document.querySelectorAll('nav a').forEach(link =&gt; {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>link.addEventListener('click', () =&gt; {</p>
-<p class="p1"><span class="Apple-converted-space">                </span>document.querySelector('nav').classList.remove('active');</p>
-<p class="p1"><span class="Apple-converted-space">            </span>});</p>
-<p class="p1"><span class="Apple-converted-space">        </span>});</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>// Legal Modals</p>
-<p class="p1"><span class="Apple-converted-space">        </span>function showLegal(type) {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>event.preventDefault();</p>
-<p class="p1"><span class="Apple-converted-space">            </span>document.getElementById(type + '-modal').style.display = 'block';</p>
-<p class="p1"><span class="Apple-converted-space">            </span>document.body.style.overflow = 'hidden';</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>function closeLegal() {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>document.getElementById('impressum-modal').style.display = 'none';</p>
-<p class="p1"><span class="Apple-converted-space">            </span>document.getElementById('datenschutz-modal').style.display = 'none';</p>
-<p class="p1"><span class="Apple-converted-space">            </span>document.body.style.overflow = 'auto';</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>// Close modal on Escape key</p>
-<p class="p1"><span class="Apple-converted-space">        </span>document.addEventListener('keydown', function(e) {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>if (e.key === 'Escape') closeLegal();</p>
-<p class="p1"><span class="Apple-converted-space">        </span>});</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;/body&gt;</p>
-<p class="p1">&lt;/html&gt;</p>
+
+    <!-- Header -->
+    <header>
+        <div class="header-inner">
+            <div class="logo">Psychologische Befunderhebung Berlin</div>
+            <button class="nav-toggle" aria-label="Navigation öffnen">☰</button>
+            <nav>
+                <a href="#angebot">Angebot</a>
+                <a href="#ablauf">Ablauf</a>
+                <a href="#ueber">Über</a>
+                <a href="#preise">Preise</a>
+                <a href="#kontakt">Kontakt</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container">
+            <h1>Psychologische Befunderhebung bei ADHS und Autismus in Berlin</h1>
+            <p>Ausführliche testpsychologische Untersuchung für Erwachsene. Zeitnahe Termine, strukturierte Abklärung, ausführlicher Befundbericht – als Grundlage für die fachärztliche Diagnose.</p>
+            <a href="#kontakt" class="btn">Termin vereinbaren</a>
+            <a href="#angebot" class="btn btn-outline">Mehr erfahren</a>
+        </div>
+    </section>
+
+    <!-- Hinweis zur Transparenz -->
+    <section style="padding: 2rem 0 0;">
+        <div class="container">
+            <div class="hinweis">
+                <strong>Wichtiger Hinweis:</strong> Ich bin Psychologin (M.Sc.) in Ausbildung zur Psychologischen Psychotherapeutin. Ich erstelle ausführliche psychologische Befundberichte als Grundlage für die fachärztliche Beurteilung. Die formale Diagnosestellung erfolgt durch einen kooperierenden Facharzt für Psychiatrie.
+            </div>
+        </div>
+    </section>
+
+    <!-- Angebot -->
+    <section id="angebot">
+        <div class="container">
+            <h2>Mein Angebot</h2>
+            <p>Ich biete strukturierte psychologische Befunderhebung für Erwachsene an, die Klarheit über eine mögliche ADHS oder Autismus-Spektrum-Konstellation suchen.</p>
+            
+            <div class="cards">
+                <div class="card">
+                    <h3><span class="card-icon">📋</span> Screening</h3>
+                    <p>Erste Einschätzung mittels standardisierter Fragebögen und kurzem Gespräch. Ideal als Einstieg, um zu klären, ob eine ausführliche Befunderhebung sinnvoll ist.</p>
+                    <ul>
+                        <li>Online-Fragebögen vorab</li>
+                        <li>45-minütiges Gespräch (online oder vor Ort)</li>
+                        <li>Schriftliche Einschätzung</li>
+                    </ul>
+                </div>
+                
+                <div class="card">
+                    <h3><span class="card-icon">🔍</span> Befunderhebung ADHS</h3>
+                    <p>Umfassende testpsychologische Untersuchung bei Verdacht auf ADHS im Erwachsenenalter.</p>
+                    <ul>
+                        <li>Ausführliche biographische Anamnese</li>
+                        <li>Standardisierte Testverfahren</li>
+                        <li>Differenzialdiagnostische Abklärung</li>
+                        <li>Ausführlicher Befundbericht</li>
+                    </ul>
+                </div>
+                
+                <div class="card">
+                    <h3><span class="card-icon">🧩</span> Befunderhebung Autismus</h3>
+                    <p>Strukturierte Abklärung einer möglichen Autismus-Spektrum-Konstellation bei Erwachsenen.</p>
+                    <ul>
+                        <li>Ausführliche Anamnese</li>
+                        <li>Standardisierte Verfahren (u.a. ADOS-2)</li>
+                        <li>Selbst- und Fremdbeurteilung</li>
+                        <li>Ausführlicher Befundbericht</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ablauf -->
+    <section id="ablauf" style="background: var(--bg-alt);">
+        <div class="container">
+            <h2>So läuft die Befunderhebung ab</h2>
+            
+            <div class="ablauf-grid">
+                <div class="ablauf-step">
+                    <div class="step-number">1</div>
+                    <h3>Erstgespräch</h3>
+                    <p>Kurzes Kennenlernen (online oder telefonisch), Klärung Ihrer Anliegen und Fragen, Terminvereinbarung.</p>
+                </div>
+                
+                <div class="ablauf-step">
+                    <div class="step-number">2</div>
+                    <h3>Fragebögen</h3>
+                    <p>Sie erhalten standardisierte Fragebögen, die Sie vorab in Ruhe zu Hause ausfüllen.</p>
+                </div>
+                
+                <div class="ablauf-step">
+                    <div class="step-number">3</div>
+                    <h3>Untersuchung</h3>
+                    <p>Ausführliche Termine vor Ort mit Anamnese, Interview und testpsychologischen Verfahren.</p>
+                </div>
+                
+                <div class="ablauf-step">
+                    <div class="step-number">4</div>
+                    <h3>Befundbericht</h3>
+                    <p>Sie erhalten einen ausführlichen schriftlichen Befundbericht mit allen Ergebnissen.</p>
+                </div>
+                
+                <div class="ablauf-step">
+                    <div class="step-number">5</div>
+                    <h3>Fachärztliche Diagnose</h3>
+                    <p>Mit dem Befundbericht erfolgt die formale Diagnosestellung und ggf. Medikation durch einen kooperierenden Psychiater.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Über -->
+    <section id="ueber">
+        <div class="container">
+            <h2>Über mich</h2>
+            
+            <div class="ueber-content">
+                <div>
+                    <p>Ich bin Psychologin (M.Sc.) in Ausbildung zur Psychologischen Psychotherapeutin mit umfangreicher Erfahrung in der psychologischen Testdiagnostik.</p>
+                    <p>Mein Fokus liegt auf der sorgfältigen Abklärung von ADHS und Autismus bei Erwachsenen – zwei Bereiche, in denen die Wartezeiten im kassenärztlichen System oft unzumutbar lang sind.</p>
+                    <p>Ich arbeite evidenzbasiert, transparent und auf Augenhöhe. Mein Ziel ist es, Ihnen Klarheit zu geben – unabhängig vom Ergebnis.</p>
+                    
+                    <h3 style="margin-top: 2rem;">Qualifikation</h3>
+                    <ul class="qualifikationen">
+                        <li>M.Sc. Psychologie</li>
+                        <li>Ausbildung zur Psychologischen Psychotherapeutin</li>
+                        <li>Erfahrung in der Durchführung standardisierter Testverfahren (ADOS-2, HASE, u.a.)</li>
+                        <li>Berufshaftpflichtversicherung</li>
+                    </ul>
+                </div>
+                
+                <div class="praxis-foto">
+                    Foto der Praxisräume (Platzhalter)
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Preise -->
+    <section id="preise" style="background: var(--bg-alt);">
+        <div class="container">
+            <h2>Preise</h2>
+            <p>Meine Leistungen werden als Selbstzahler-Angebot erbracht. Eine Erstattung durch private Krankenversicherungen ist je nach Tarif teilweise möglich – bitte klären Sie dies vorab mit Ihrer Versicherung.</p>
+            
+            <div class="cards">
+                <div class="card">
+                    <h3>Screening</h3>
+                    <p>Erste Einschätzung mit Fragebögen und kurzem Gespräch</p>
+                    <div class="price">[Preis] € <span>inkl. MwSt.</span></div>
+                    <a href="#kontakt" class="btn" style="width: 100%; text-align: center;">Anfragen</a>
+                </div>
+                
+                <div class="card">
+                    <h3>Befunderhebung ADHS</h3>
+                    <p>Vollständige testpsychologische Untersuchung</p>
+                    <div class="price">[Preis] € <span>inkl. MwSt.</span></div>
+                    <a href="#kontakt" class="btn" style="width: 100%; text-align: center;">Anfragen</a>
+                </div>
+                
+                <div class="card">
+                    <h3>Befunderhebung Autismus</h3>
+                    <p>Vollständige Abklärung einer Autismus-Spektrum-Konstellation</p>
+                    <div class="price">[Preis] € <span>inkl. MwSt.</span></div>
+                    <a href="#kontakt" class="btn" style="width: 100%; text-align: center;">Anfragen</a>
+                </div>
+                
+                <div class="card">
+                    <h3>Kombination ADHS + Autismus</h3>
+                    <p>Umfassende Abklärung beider Bereiche</p>
+                    <div class="price">[Preis] € <span>inkl. MwSt.</span></div>
+                    <a href="#kontakt" class="btn" style="width: 100%; text-align: center;">Anfragen</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontakt -->
+    <section id="kontakt">
+        <div class="container">
+            <h2>Kontakt & Terminbuchung</h2>
+            
+            <div class="kontakt-grid">
+                <div class="kontakt-info">
+                    <p>Buchen Sie direkt einen Termin für ein kurzes Erstgespräch – kostenlos und unverbindlich.</p>
+                    
+                    <h3 style="margin-top: 2rem;">Kontaktdaten</h3>
+                    <p>📍 [Adresse Prenzlauer Berg – Platzhalter]</p>
+                    <p>📧 <a href="mailto:kontakt@pb-berlin.de">kontakt@pb-berlin.de</a></p>
+                    <p>📞 [Telefonnummer – Platzhalter]</p>
+                    
+                    <h3 style="margin-top: 2rem;">Anfahrt</h3>
+                    <p>Die Praxis befindet sich in Berlin Prenzlauer Berg und ist gut mit öffentlichen Verkehrsmitteln erreichbar.</p>
+                </div>
+                
+                <div class="calendly-placeholder">
+                    <p style="margin-bottom: 1rem;">Terminbuchung</p>
+                    <p style="color: var(--text-light); font-size: 0.9rem;">
+                        Hier wird der Calendly-Kalender eingebettet
+                    </p>
+
+                    <!-- Calendly Embed (aktivieren, wenn du deinen Link hast) -->
+                    <!--
+                    <div class="calendly-inline-widget" data-url="https://calendly.com/DEIN-LINK" style="min-width:320px;height:630px;"></div>
+                    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+                    -->
+
+                    <a href="https://calendly.com/PLATZHALTER" class="btn" style="margin-top: 1rem;">Termin buchen</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-inner">
+                <div>© 2025 Psychologische Befunderhebung Berlin</div>
+                <div>
+                    <a href="#impressum" onclick="showLegal(event, 'impressum')">Impressum</a>
+                    <a href="#datenschutz" onclick="showLegal(event, 'datenschutz')">Datenschutz</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Impressum Modal -->
+    <div id="impressum-modal" style="display:none; position:fixed; top:0; left:0; right:0; bottom:0; background:var(--bg); z-index:2000; overflow-y:auto; padding:2rem;">
+        <div class="container" style="max-width:800px; background:var(--white); padding:3rem; border-radius:10px; margin-top:2rem;">
+            <button onclick="closeLegal()" style="float:right; background:none; border:none; font-size:1.5rem; cursor:pointer;">✕</button>
+            <h1>Impressum</h1>
+            
+            <h2>Angaben gemäß § 5 TMG</h2>
+            <p>
+                Anastasia Kourti, M.Sc. Psychologie<br>
+                [Straße und Hausnummer – Platzhalter]<br>
+                [PLZ] Berlin Prenzlauer Berg
+            </p>
+            
+            <h2>Kontakt</h2>
+            <p>
+                Telefon: [Platzhalter]<br>
+                E-Mail: kontakt@pb-berlin.de
+            </p>
+            
+            <h2>Berufsbezeichnung</h2>
+            <p>
+                Psychologin (M.Sc.)<br>
+                Verliehen in: Deutschland
+            </p>
+            <p>
+                Psychologin in Ausbildung zur Psychologischen Psychotherapeutin
+            </p>
+            
+            <h2>Hinweis zur Tätigkeit</h2>
+            <p>
+                Die angebotenen Leistungen umfassen psychologische Befunderhebung und testpsychologische Untersuchungen. Es handelt sich nicht um Heilbehandlung im Sinne des Psychotherapeutengesetzes. Die formale Diagnosestellung erfolgt durch einen kooperierenden Facharzt für Psychiatrie.
+            </p>
+            
+            <h2>Berufshaftpflichtversicherung</h2>
+            <p>
+                [Name und Anschrift der Versicherung – Platzhalter]<br>
+                Geltungsraum: Deutschland
+            </p>
+            
+            <h2>Streitschlichtung</h2>
+            <p>
+                Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit:
+                <a href="https://ec.europa.eu/consumers/odr/" target="_blank">https://ec.europa.eu/consumers/odr/</a>
+            </p>
+            <p>
+                Ich bin nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.
+            </p>
+        </div>
+    </div>
+
+    <!-- Datenschutz Modal -->
+    <div id="datenschutz-modal" style="display:none; position:fixed; top:0; left:0; right:0; bottom:0; background:var(--bg); z-index:2000; overflow-y:auto; padding:2rem;">
+        <div class="container" style="max-width:800px; background:var(--white); padding:3rem; border-radius:10px; margin-top:2rem;">
+            <button onclick="closeLegal()" style="float:right; background:none; border:none; font-size:1.5rem; cursor:pointer;">✕</button>
+            <h1>Datenschutzerklärung</h1>
+            
+            <h2>1. Verantwortliche Stelle</h2>
+            <p>
+                Anastasia Kourti<br>
+                [Adresse – Platzhalter]<br>
+                E-Mail: kontakt@pb-berlin.de
+            </p>
+            
+            <h2>2. Erhebung und Speicherung personenbezogener Daten</h2>
+            <p>
+                Beim Besuch dieser Website werden automatisch Informationen erfasst, die Ihr Browser an den Server übermittelt (Server-Logfiles). Diese Daten sind nicht bestimmten Personen zuordenbar und werden nicht mit anderen Datenquellen zusammengeführt.
+            </p>
+            
+            <h2>3. Kontaktaufnahme</h2>
+            <p>
+                Wenn Sie per E-Mail Kontakt aufnehmen, werden Ihre Angaben zur Bearbeitung der Anfrage und für den Fall von Anschlussfragen gespeichert. Diese Daten werden ohne Ihre ausdrückliche Einwilligung nicht weitergegeben.
+            </p>
+            
+            <h2>4. Terminbuchung (Calendly)</h2>
+            <p>
+                Für die Terminbuchung wird der Dienst Calendly (Calendly LLC, USA) verwendet. Bei der Buchung werden Ihre eingegebenen Daten (Name, E-Mail, ggf. weitere Angaben) an Calendly übermittelt.
+                Bitte beachten Sie die Datenschutzerklärung von Calendly:
+                <a href="https://calendly.com/privacy" target="_blank">https://calendly.com/privacy</a>
+            </p>
+            
+            <h2>5. Ihre Rechte</h2>
+            <p>
+                Sie haben das Recht auf Auskunft, Berichtigung, Löschung und Einschränkung der Verarbeitung Ihrer personenbezogenen Daten. Wenden Sie sich hierzu an die oben genannte Kontaktadresse.
+            </p>
+            
+            <h2>6. Hosting</h2>
+            <p>
+                Diese Website wird bei GitHub Pages (GitHub Inc., USA) gehostet. GitHub kann beim Aufruf der Website Server-Logfiles speichern.
+                Weitere Informationen:
+                <a href="https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement" target="_blank">
+                    GitHub Privacy Statement
+                </a>
+            </p>
+            
+            <p style="margin-top: 2rem; color: var(--text-light); font-size: 0.9rem;">
+                <strong>Hinweis:</strong> Diese Datenschutzerklärung ist ein Grundgerüst. Bitte lassen Sie diese von einem Rechtsanwalt prüfen und an Ihre konkrete Situation anpassen, insbesondere wenn Sie weitere Tools oder Tracking einsetzen.
+            </p>
+        </div>
+    </div>
+
+    <script>
+        // Mobile Navigation Toggle
+        document.querySelector('.nav-toggle').addEventListener('click', function() {
+            document.querySelector('nav').classList.toggle('active');
+        });
+        
+        // Close mobile nav on link click
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.querySelector('nav').classList.remove('active');
+            });
+        });
+        
+        // Legal Modals
+        function showLegal(event, type) {
+            event.preventDefault();
+            document.getElementById(type + '-modal').style.display = 'block';
+            document.body.style.overflow = 'hidden';
+        }
+        
+        function closeLegal() {
+            document.getElementById('impressum-modal').style.display = 'none';
+            document.getElementById('datenschutz-modal').style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+        
+        // Close modal on Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') closeLegal();
+        });
+    </script>
+
 </body>
 </html>
